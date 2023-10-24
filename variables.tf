@@ -22,17 +22,6 @@ variable "default_zone" {
 
 ###common vars
 
-#variable "vms_ssh_root_key" {
-#  type        = string
-#  default     = "your_ssh_ed25519_key"
-#  description = "ssh-keygen -t ed25519"
-#}
-
-#variable "metadata" {
-#  type    = map(string)
-#  default = { serial-port-enable = "1", ssh-keys = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID08bAk0mu9NnxuO+QTKCYee5KF2IZsi9DCm8ATi8uzQ root@ycjll.ru-central1.internal" }
-#}
-
 variable "ssh_public_key" {
   type        = string
   default     = "/root/.ssh/id_ed25519.pub"
