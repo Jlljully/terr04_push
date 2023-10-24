@@ -1,4 +1,3 @@
-//test
 module "vpc_dev" {
   source       = "./vpc"
 }
