@@ -19,17 +19,6 @@ variable "default_zone" {
   default     = "ru-central1-a"
   description = "https://cloud.yandex.ru/docs/overview/concepts/geo-scope"
 }
-variable "default_cidr" {
-  type        = list(string)
-  default     = ["10.0.1.0/24"]
-  description = "https://cloud.yandex.ru/docs/vpc/operations/subnet-create"
-}
-
-variable "vpc_name" {
-  type        = string
-  default     = "develop"
-  description = "VPC network&subnet name"
-}
 
 ###common vars
 
@@ -44,20 +33,6 @@ variable "vpc_name" {
 #  default = { serial-port-enable = "1", ssh-keys = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID08bAk0mu9NnxuO+QTKCYee5KF2IZsi9DCm8ATi8uzQ root@ycjll.ru-central1.internal" }
 #}
 
-
-###example vm_web var
-variable "vm_web_name" {
-  type        = string
-  default     = "netology-develop-platform-web"
-  description = "example vm_web_ prefix"
-}
-
-###example vm_db var
-variable "vm_db_name" {
-  type        = string
-  default     = "netology-develop-platform-db"
-  description = "example vm_db_ prefix"
-}
 
 variable "ssh_public_key" {
   type        = string
